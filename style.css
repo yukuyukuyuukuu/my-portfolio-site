@@ -1,1 +1,60 @@
+/* ===== ベース設定 ===== */
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  line-height: 1.6;
+  padding: 1rem;
+  margin: 0;
+  color: #333;
+  background: #fff;
+}
 
+h1, h2, h3 {
+  margin: 0 0 0.5em;
+}
+
+a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.works .work {
+  margin-bottom: 2rem;
+}
+
+.work img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.work-text a {
+  margin-right: 0.5em;
+}
+
+/* ===== PCサイズ（768px〜） ===== */
+@media screen and (min-width: 768px) {
+  .works .work {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .work img {
+    max-width: 300px;
+    flex-shrink: 0;
+  }
+
+  .work-text {
+    flex: 1;
+  }
+
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
